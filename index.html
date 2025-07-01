@@ -1,11 +1,28 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 
 <head>
-	<title>Dickinson Farm - Blueberries in Aurora</title>
-	<meta name="description" content="Dickinson Farm is a family owned and operated farm in Aurora, Oregon. We grow blueberries." />
+	<title>Dickinson Farm - U-Pick Blueberries in Aurora, Oregon | Family Farm</title>
+	<meta name="description"
+		content="Dickinson Farm offers fresh u-pick blueberries in Aurora, Oregon. Family owned blueberry farm open July-August. $2.50/lb. Visit our blueberry farm at 14394 Ehlen Rd NE." />
+	<meta name="keywords" content="blueberries, u-pick, Aurora Oregon, blueberry farm, family farm, fresh berries, pick your own, Dickinson Farm" />
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://thedickinsonfarm.com/" />
+	<meta property="og:title" content="Dickinson Farm - U-Pick Blueberries in Aurora, Oregon" />
+	<meta property="og:description" content="Family owned blueberry farm offering fresh u-pick blueberries. Open July-August, $2.50/lb." />
+	<meta property="og:image" content="https://thedickinsonfarm.com/images/DickinsonFarmCircle.png" />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://thedickinsonfarm.com/" />
+	<meta property="twitter:title" content="Dickinson Farm - U-Pick Blueberries in Aurora, Oregon" />
+	<meta property="twitter:description" content="Family owned blueberry farm offering fresh u-pick blueberries. Open July-August, $2.50/lb." />
+	<meta property="twitter:image" content="https://thedickinsonfarm.com/images/DickinsonFarmCircle.png" />
+
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="canonical" href="https://thedickinsonfarm.com" />
 	<noscript>
@@ -16,9 +33,46 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
 	<link rel="manifest" href="/minifest.json">
+
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "LocalBusiness",
+		"name": "Dickinson Farm",
+		"image": "https://thedickinsonfarm.com/images/DickinsonFarmCircle.png",
+		"@id": "https://thedickinsonfarm.com",
+		"url": "https://thedickinsonfarm.com",
+		"telephone": "503-929-6466",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "14394 Ehlen Rd NE",
+			"addressLocality": "Aurora",
+			"addressRegion": "OR",
+			"postalCode": "97002",
+			"addressCountry": "US"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 45.2357,
+			"longitude": -122.7542
+		},
+		"openingHoursSpecification": [
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": ["Thursday", "Friday", "Saturday"],
+				"opens": "08:00",
+				"closes": "14:00"
+			}
+		],
+		"sameAs": "https://www.facebook.com/profile.php?id=61561955404795",
+		"description": "Family owned and operated blueberry farm in Aurora, Oregon offering u-pick blueberries",
+		"priceRange": "$2.50 per pound"
+	}
+	</script>
 </head>
 
-<body class="landing is-preload">
+<body class=" is-preload">
 
 	<!-- Page Wrapper -->
 	<div id="page-wrapper">
@@ -35,7 +89,7 @@
 								<li><a href="./">Home</a></li>
 								<li><a href="blueberries.html">Blueberries</a></li>
 								<li><a href="music.html">Music</a></li>
-								<li><a href="contact.html">Contant</a>
+								<li><a href="contact.html">Contact</a></li>
 							</ul>
 						</div>
 					</li>
@@ -44,125 +98,148 @@
 		</header>
 
 		<!-- Banner -->
-		<section id="banner">
-			<div class="inner">
+		<section class="wrapper style5">
+			<div class="inner" style="text-align: center;">
+				<div>
+					<img style="max-width:250px;" src="images/DickinsonFarmCircle.png"
+						alt="Dickinson Farm blueberry farm logo - Aurora Oregon family owned blueberry farm" />
+				</div>
 				<h2>Dickinson Farm</h2>
-				<h3>Blueberries in Aurora, Oregon</h3>
+				<h3>U-Pick Blueberries in Aurora, Oregon</h3>
 				<p>Family owned
 					and operated <br />
 					We love <a href="blueberries.html">blueberries</a></p>
-					<p>We will open for the 2025 season in July</p>
-					<p>July -  Thursday, Friday, Saturday</p>	
-				<!-- <p>Start Date: June 5th - End Date: August 3rd</p>
+			</div>
+		</section>
+
+		<section class="wrapper style4">
+			<div class="inner" style="text-align: center;">
+				<h3>2025 Season Hours</h3>
+				<p>We will open for the 2025 season Saturday, July 5th (maybe)</p>
+
+
+				<p></p>
 				<table style="max-width:400px; margin:0 auto;">
 					<tr>
 						<td>Thursday</td>
-						<td>8am - 8pm</td>
+						<td>8am - 2pm</td>
 					</tr>
 					<tr>
 						<td>Friday</td>
-						<td>8am - 8pm</td>
+						<td>8am - 2pm</td>
 					</tr>
 					<tr>
 						<td>Saturday</td>
-						<td>8am - 8pm</td>
+						<td>8am - 2pm</td>
 					</tr>
 				</table>
-				Closed Sunday, Monday, Tuesday, and Wednesday.
 				</p>
-				<p><b>Last week for u-pick (Aug 1st-3rd).</b> All varieties are ready and the blueberry bushes are loaded</p> -->
+				<p>Closed Sunday, Monday, Tuesday, and Wednesday.</p>
 				<p>All of our blueberries are mid season from early July to early August</p>
-				<p>Contact us 503-929-6466 for any question</p>
-				<p>Follow us on facebook for updates: <a href="https://www.facebook.com/profile.php?id=61561955404795">Facebook Blueberry Farm</a></p>
+				<!-- <p><b>Last week for u-pick (Aug 1st-3rd).</b> All varieties are ready and the blueberry bushes are loaded</p>  -->
+
 			</div>
-			<a href="#one" class="more scrolly">Learn More</a>
+
+		</section>
+		<section class="spotlight wrapper alt wrapper  style5">
+			<div class="image"><img src="images/photos/IMG_20230722_124540.jpg" alt="Fresh blueberries growing on bushes at Dickinson Farm in Aurora Oregon" />
+			</div>
+			<div class="content">
+				<h2>Visit Our Blueberry Farm</h2>
+				
+				<p>
+					We are located in Aurora, Oregon.
+				</p>
+				<address>
+					<a href="https://www.google.com/maps?q=14394+Ehlen+Rd+NE,+Aurora,+Oregon+97002" target="_blank"
+						rel="noopener">
+						14394 Ehlen Rd NE, Aurora, Oregon 97002
+					</a>
+				</address>
+				<p> </p>
+				<h2>U-Pick Blueberry Pricing</h2>
+				<p>
+					We offer u-pick blueberries for $2.50 per pound.
+				</p>
+			</div>
 		</section>
 
-		<!-- One -->
 
 
-		<!-- Two -->
-		<section id="two" class="wrapper alt style2">
-			<section class="spotlight">
-				<div class="image"><img src="images/blueberries.jpg" alt="blueberries Aurora, Oregon" /></div>
-				<div class="content">
-					<h2>Blueberries</h2>
-					<p>We grow several varieties of blueberries. From classic blueberries to specialty blueberries.</p>
-					<ul class="actions special">
-						<li><a href="blueberries.html" class="button primary">View Products</a></li>
-					</ul>
-				</div>
-			</section>
-			<!-- <section class="spotlight">
-				<div class="image"><img src="images/chickens.jpg" alt="" /></div>
-				<div class="content">
-					<h2>Chicken Eggs</h2>
-					<p>Happy chickens lay the best eggs. Our hens are free ranged and enjoy life. They provide many more
-						eggs than we can eat. We enjoy selling our fresh eggs to our local community.</p>
-				</div>
-			</section> -->
-			<!-- <section class="spotlight">
-				<div class="image"><img src="images/pic02.jpg" alt="" /></div>
-				<div class="content">
-					<h2>Working Farm</h2>
-					<p>We are always growing new products.</p>
-				</div>
-			</section>
-			<section class="spotlight">
-				<div class="image"><img src="images/pic03.jpg" alt="" /></div>
-				<div class="content">
-					<h2>Tractor</h2>
-					<p>We are proud of our 1972 Ford 4000 tractor. She may be old, but she is strong. Our tractor has
-						served us well in developing and maintaining our family farm.</p>
-				</div>
-			</section>
-		</section> -->
-
-		<!-- Three -->
-		<!-- <section id="three" class="wrapper style3 special">
-			<div class="inner">
-				<header class="major">
-					<h2>Our Services</h2>
-					<p>We love working with customers that share a passion for local farm fresh products</p>
-				</header>
-				<ul class="features">
-					<li class="icon fa-paper-plane">
-						<h3>Hours</h3>
-						<p>We are closed for the winter season</p>
-					</li>
-					<li class="icon solid fa-laptop">
-						<h3>Orders</h3>
-						<p>We will be soon taking order for farm fresh products</p>
-					</li>
-
-					<li class="icon fa-heart">
-						<h3>Rate Us</h3>
-						<p>We love feedback. It helps us grow our farm. Leave a review on our business listing.</p>
-					</li>
-					<li class="icon fa-flag">
-						<h3>Directions</h3>
-						<p>We are located in Aurora, Oregon</p>
-					</li>
+		<section class="spotlight wrapper alt style2">
+			<div class="image"><img src="images/blueberries.jpg" alt="Ripe blueberries harvest from Aurora Oregon blueberry farm" /></div>
+			<div class="content">
+				<h2>Blueberries</h2>
+				<p>We grow several varieties of blueberries. From classic blueberries to specialty blueberries.</p>
+				<ul class="actions special">
+					<li><a href="blueberries.html" class="button primary">View Products</a></li>
 				</ul>
 			</div>
+		</section>
+
+
+
+
+		<!-- <section class="spotlight">
+			<div class="image"><img src="images/pic02.jpg" alt="" /></div>
+			<div class="content">
+				<h2>Working Farm</h2>
+				<p>We are always growing new products.</p>
+			</div>
 		</section> -->
-		<section id="one" class="wrapper style1 special">
-			<div class="inner">
-				<header class="major">
-					<h2>Family farm - happy farms</h2>
-					<p>Our farm is a work of love. We strive to create high quality products for our local community.
-					</p>
-				</header>
-				<ul class="icons major">
-					<li><span class="icon fa-bluecircle major style1"><span class="label">Lorem</span></span></li>
-					<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
-					<li><span class="icon fa-egg major style1"><span class="label">Lorem</span></span></li>
-					<li><span class="icon solid fa-tractor major style3"><span class="label">Dolor</span></span></li>
-				</ul>
+
+		<!-- <section class="spotlight wrapper alt style3">
+			<div class="image"><img src="images/pic03.jpg" alt="" /></div>
+			<div class="content">
+				<h2>Tractor</h2>
+				<p>We are proud of our 1972 Ford 4000 tractor. She may be old, but she is strong. Our tractor has
+					served us well in developing and maintaining our family farm.</p>
+			</div>
+		</section> -->
+
+
+
+
+		<section class="spotlight wrapper alt style5">
+			<div class="image"><img src="images/photos/20200726_203656.jpg" alt="Family enjoying blueberry picking at Dickinson Farm Aurora Oregon" />
+			</div>
+			<div class="content">
+				<h2>Family farm - happy farms</h2>
+				<p>Our farm is a work of love. We strive to create high quality products for our local
+					community.
+				</p>
+			</div>
+		</section>
+
+		<section class="spotlight wrapper alt style3">
+			<div class="image"><img src="images/field/IMG_20240508_192826.jpg" alt="Blueberry farm  at Dickinson Farm in Aurora Oregon" />
+			</div>
+			<div class="content">
+				<h2>Leave Us a Review</h2>
+				<p>
+					We appreciate your feedback! Please consider leaving us a review on Google to help others find
+					our farm.
+				</p>
+				<a href="https://g.page/r/CQoidiHx7nEtEBM/review" class="button primary" target="_blank" rel="noopener">
+					Leave a Google Review
+				</a>
 			</div>
 		</section>
 		<!-- CTA -->
-		<section id="cta" class="wrapper style4">
+
+
+		<section class="spotlight wrapper alt style4">
+			<div class="image"><img src="images/photos/PXL_20201020_214356288.jpg" alt="Aurora Oregon blueberry farm contact and customer service at Dickinson Farm" />
+			</div>
+			<div class="content">
+				<h2>Contact Us</h2>
+				<p>We love to hear from our customer and how we can serve them better</p>
+				<a href="contact.html" class="button primary fit">
+					Contact Us
+				</a>
+			</div>
+		</section>
+		<!-- <section id="cta" class="wrapper style4">
 			<div class="inner">
 				<header>
 					<h2>Contact Us</h2>
@@ -170,10 +247,10 @@
 				</header>
 				<ul class="actions stacked">
 					<li><a href="contact.html" class="button fit primary">Contact Us</a></li>
-					<!-- <li><a href="blueberries.html" class="button fit">Learn More</a></li> -->
+				
 				</ul>
 			</div>
-		</section>
+		</section> -->
 
 		<!-- Footer -->
 		<footer id="footer">
@@ -181,7 +258,8 @@
 				<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 				<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
 				<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>-->
-				<li><a href="https://www.facebook.com/profile.php?id=61561955404795" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> 
+				<li><a href="https://www.facebook.com/profile.php?id=61561955404795"
+						class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 				<li><a href="mailto:farm@jdsoftwarellc.com" class="icon solid fa-envelope"><span
 							class="label">Email</span></a>
 				</li>

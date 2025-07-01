@@ -23,9 +23,8 @@
 
 	// Play initial animations on page load.
 		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
+			// Animation removed - page will load without preload effects
+			$body.removeClass('is-preload');
 		});
 
 	// Mobile?
@@ -68,16 +67,7 @@
 	// Header.
 		if ($banner.length > 0
 		&&	$header.hasClass('alt')) {
-
-			$window.on('resize', function() { $window.trigger('scroll'); });
-
-			$banner.scrollex({
-				bottom:		$header.outerHeight() + 1,
-				terminate:	function() { $header.removeClass('alt'); },
-				enter:		function() { $header.addClass('alt'); },
-				leave:		function() { $header.removeClass('alt'); }
-			});
-
+			// Animation removed - header will remain static
 		}
 
 })(jQuery);
