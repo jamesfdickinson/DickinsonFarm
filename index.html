@@ -74,7 +74,7 @@
 				"@type": "OpeningHoursSpecification",
 				"dayOfWeek": ["Thursday", "Friday", "Saturday"],
 				"opens": "08:00",
-				"closes": "14:00"
+				"closes": "20:00"
 			}
 		],
 		"sameAs": "https://www.facebook.com/profile.php?id=61561955404795",
@@ -138,6 +138,7 @@
 				<!--SEASON HOURS HTML -->
 				<h3>2026 Season Hours</h3>
 				<p>We are open for the 2026 season</p>
+				<p><strong id="farm-open-status" aria-live="polite">Status: Checking current hours...</strong></p>
 
 				<p></p>
 				<table style="max-width:400px; margin:0 auto;">
@@ -184,6 +185,12 @@
 				<p>
 					We offer u-pick blueberries for $2.50 per pound.
 				</p>
+
+				<h2>Frequently Asked Questions</h2>
+				<p><strong>Are kids welcome?</strong> Yes, families are welcome.</p>
+				<p><strong>Do you have a restroom?</strong> Yes, a portable restroom is available.</p>
+				<p><strong>Can I bring my dog?</strong> Please leave pets at home unless they are service animals.</p>
+				<p><strong>What payment types do you accept?</strong> Cash, PayPal, and Venmo are accepted.</p>
 			</div>
 		</section>
 
@@ -326,6 +333,54 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>
+		(function () {
+			var statusEl = document.getElementById('farm-open-status');
+			if (!statusEl) {
+				return;
+			}
+
+			var timezone = 'America/Los_Angeles';
+			var now = new Date();
+			var parts = new Intl.DateTimeFormat('en-US', {
+				timeZone: timezone,
+				weekday: 'short',
+				month: 'numeric',
+				day: 'numeric',
+				hour: 'numeric',
+				minute: 'numeric',
+				hour12: false
+			}).formatToParts(now);
+
+			var values = {};
+			for (var i = 0; i < parts.length; i++) {
+				values[parts[i].type] = parts[i].value;
+			}
+
+			var dayMap = {
+				Thu: 4,
+				Fri: 5,
+				Sat: 6
+			};
+
+			var weekday = values.weekday;
+			var month = parseInt(values.month, 10);
+			var day = parseInt(values.day, 10);
+			var hour = parseInt(values.hour, 10);
+			var minute = parseInt(values.minute, 10);
+			var minutesSinceMidnight = (hour * 60) + minute;
+
+			var openDays = Object.prototype.hasOwnProperty.call(dayMap, weekday);
+			var withinHours = minutesSinceMidnight >= 480 && minutesSinceMidnight < 1200;
+			var julyFourthHoliday = month === 7 && day === 4;
+
+			if (openDays && withinHours && !julyFourthHoliday) {
+				statusEl.textContent = 'Status: Open now (Thu-Sat, 8am-8pm)';
+			} else {
+				statusEl.textContent = 'Status: Closed now (Thu-Sat, 8am-8pm; closed July 4)';
+			}
+		})();
+	</script>
 
 </body>
 
