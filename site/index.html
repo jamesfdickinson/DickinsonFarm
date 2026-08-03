@@ -47,6 +47,16 @@
 	</script>
 
 	<!-- Structured Data -->
+	<!-- Restore this property inside the farm's structured data when the season reopens:
+	"openingHoursSpecification": [
+		{
+			"@type": "OpeningHoursSpecification",
+			"dayOfWeek": ["Thursday", "Friday", "Saturday"],
+			"opens": "08:00",
+			"closes": "20:00"
+		}
+	],
+	-->
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
@@ -69,14 +79,6 @@
 			"latitude": 45.2357,
 			"longitude": -122.7542
 		},
-		"openingHoursSpecification": [
-			{
-				"@type": "OpeningHoursSpecification",
-				"dayOfWeek": ["Thursday", "Friday", "Saturday"],
-				"opens": "08:00",
-				"closes": "20:00"
-			}
-		],
 		"sameAs": "https://www.facebook.com/profile.php?id=61561955404795",
 		"description": "Family owned and operated blueberry farm in Aurora, Oregon offering u-pick blueberries",
 		"priceRange": "$2.50 per pound"
@@ -136,6 +138,8 @@
 				<!-- <p><b>Last week for u-pick (Aug 1st-3rd).</b> All varieties are ready and the blueberry bushes are loaded</p>  -->
 
 				<!--SEASON HOURS HTML -->
+				<h3>Closed</h3>
+				<!--
 				<h3>2026 Season Hours</h3>
 				<p><strong id="farm-open-status" aria-live="polite">Status: Checking current hours...</strong></p>
 
@@ -156,6 +160,7 @@
 				</table>
 				
 				<p>Closed Sunday through Wednesday.</p>
+				-->
 				<p>Updates on this page or on <a
 						href="https://www.facebook.com/profile.php?id=61561955404795" target="_blank"
 						rel="noopener">Facebook</a></p>
@@ -330,7 +335,8 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-	<script>
+		<!-- Season-hours status script (restore with the season hours above)
+		<script>
 		(function () {
 			var statusEl = document.getElementById('farm-open-status');
 			if (!statusEl) {
@@ -377,7 +383,8 @@
 				statusEl.textContent = 'Status: Closed now (Thu-Sat, 8am-8pm; closed July 4)';
 			}
 		})();
-	</script>
+		</script>
+		-->
 
 </body>
 
